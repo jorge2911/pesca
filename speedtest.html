@@ -11,6 +11,8 @@
     <link rel ="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title> PescAR en Linea </title>
+    
+  <title>Test de Velocidad</title>
 
 </head>
 <body style="background-image: url('./img/fondo-Pesca.png'); background-size: cover;">
@@ -56,14 +58,33 @@
                      <track src="./video/subtitulo.vtt" kind="subtitles" srclang="es" label="Español" default>
                 </video>
             </div>
+<h1>Iniciar test de velocidad</h1>
+  <button onclick="iniciarTest()">Ejecutar Test</button>
+  <div id="contenedorTest" style="margin-top:20px;"></div>
 
-            <button onclick="nPerfTestStarted()" class="btn btn-primary m-3">
-  Iniciar Test
-</button>
+  <script>
+    function iniciarTest() {
+      const contenedor = document.getElementById('contenedorTest');
+      contenedor.innerHTML = `
+        <iframe src="https://www.nperf.com/?sp=10793"
+                width="100%" height="600" frameborder="0"
+                onload="console.log('Iframe cargado')">
+        </iframe>
+      `;
+    }
 
-<button onclick="nPerfTestCompletedObj({ velocidad: '45Mbps', ping: '28ms' })" class="btn btn-success m-3">
-  Finalizar Test
-</button>
+    // Estas funciones solo funcionarán si el script de nPerf ejecutado dentro del iframe las puede "ver".
+    // Eso solo es posible si el test no está en un iframe o si nPerf proporciona una forma de comunicarse.
+
+    function nPerfTestStarted() {
+      console.log("Test iniciado");
+    }
+
+    function nPerfTestCompletedObj(result) {
+      console.log("Test completado:", result);
+    }
+  </script>
+            
     </main>
 
 
@@ -83,21 +104,7 @@
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
 
-  
-  <script>
-  console.log("JS cargado correctamente");
 
-  function nPerfTestStarted() {
-    console.log("Test iniciado");
-  }
-
-  function nPerfTestCompletedObj(result) {
-    console.log("Test completado con resultado:", result);
-  }
-
-  // Llamada de prueba
-  nPerfTestStarted();
-  nPerfTestCompletedObj({ velocidad: "50Mbps", ping: "30ms" });
 </script>
 </body>
 </html>

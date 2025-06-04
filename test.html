@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test de Velocidad</title>
+</head>
+<body>
+  <h1>Iniciar test de velocidad</h1>
+  <button onclick="iniciarTest()">Ejecutar Test</button>
+  <div id="contenedorTest" style="margin-top:20px;"></div>
+
+  <script>
+    function iniciarTest() {
+      const contenedor = document.getElementById('contenedorTest');
+      contenedor.innerHTML = `
+        <iframe src="https://www.nperf.com/?sp=10793"
+                width="100%" height="600" frameborder="0"
+                onload="console.log('Iframe cargado')">
+        </iframe>
+      `;
+    }
+
+    // Estas funciones solo funcionarán si el script de nPerf ejecutado dentro del iframe las puede "ver".
+    // Eso solo es posible si el test no está en un iframe o si nPerf proporciona una forma de comunicarse.
+
+    function nPerfTestStarted() {
+      console.log("Test iniciado");
+    }
+
+    function nPerfTestCompletedObj(result) {
+      console.log("Test completado:", result);
+    }
+  </script>
+</body>
+</html>
