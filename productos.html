@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel ="stylesheet" href="./css/estilo.css">
+    <link rel ="stylesheet" href="./css/carrito.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title> PescAR en Linea </title>
 
@@ -28,7 +29,7 @@
              <ul nav justify-content-end>
                 <li class="nav-item"> <a class="nav-link" href="./index.html">INICIO</a></li>
                 <li class="nav-item"> <a class="nav-link" href="./productos.html">Productos</a></li>
-                <li class="nav-item"> <a class="nav-link" href="./servicios.html">Servicios</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./servicios.html">Club de Beneficios</a></li>
                 <li class="nav-item"> <a class="nav-link" href="./contacto.html">Contacto</a></li>
                 <li class="nav-item"> <a class="nav-link" href="./ubicacion.html">Ubicación</a></li>
               </ul>
@@ -41,6 +42,7 @@
           <a href="./flexbox.html">Vista con flexbox</a> 
           <a href="./bootstrap.html">Vista con bootstrap</a>
           <a href="./Grid.html">Vista con grid</a>
+          <a href="./servicios.html">Vista con API Externa</a>         
          </div>
  
     </main>
@@ -55,11 +57,18 @@
 <footer>
         <p>Jorge Vitale - 2025 | jorgeavitale@gmail.com</p> <small>Las imágenes fueron cedidas por aficionados de Pesca en Linea <a
           href="https://www.pescaonline.com.ar/">Pescaonline: </a></small>
-      </div>
 </footer>
 
- 
+<a href="./carrito.html" class="carrito-flotante" title="Ver carrito">
+  <i class="fas fa-shopping-cart"></i>
+  <span id="contador-carrito" class="contador-carrito">0</span>
+</a>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="./js/carrito.js" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo getElementById</title>
+  <script src="./js/eventos-dom.js" defer></script>
+</head>
+<body>
+    <h1>Ejemplo con getElementById()</h1>  
+  <p id="mensaje">Este es el mensaje original.</p>
+  <button onclick="cambiarMensaje()">Cambiar mensaje</button>
+
+    <h1>Ejemplo con getElementsByClassName()</h1>
+  <p class="frase">Primer párrafo.</p>
+  <p class="frase">Segundo párrafo.</p>
+  <p class="frase">Tercer párrafo.</p>
+  <button onclick="modificarFrases()">Modificar frases</button>
+
+    <h1>Ejemplo con querySelector()</h1>
+  <label for="nombre">Escribí tu nombre:</label>
+  <input type="text" id="nombreInput" placeholder="Tu nombre aquí">
+  <button onclick="mostrarSaludo()">Mostrar saludo</button>
+  <p id="saludoOutput"></p>
+
+  <h1>Ejemplo con querySelectorAll()</h1>
+  <ul>
+    <li class="item">Elemento 1</li>
+    <li class="item">Elemento 2</li>
+    <li class="item">Elemento 3</li>
+    <li class="item">Elemento 4</li>
+    <li class="item">Elemento 5</li>
+  </ul>
+  <button onclick="resaltarPares()">Resaltar elementos pares</button>
+
+    <h1>Ejemplo con createElement() y appendChild()</h1>
+  <input type="text" id="tareaInput" placeholder="Escribí una tarea">
+  <button onclick="agregarTarea()">Agregar tarea</button>
+  <ul id="listaTareas">
+    <!-- Aquí se agregan los <li> dinámicamente -->      
+  </ul>
+
+  <h1>Ejemplo con innerHTML y textContent</h1>
+  <div id="contenedorTexto">Este es un texto original.</div>
+  <br>
+  <button onclick="usarTextContent()">Cambiar con textContent</button>
+  <button onclick="usarInnerHTML()">Cambiar con innerHTML</button>
+
+    <h1>Ejemplo con remove()</h1>
+  <ul id="lista">
+    <li>Elemento 1 <button onclick="eliminarElemento(this)">Eliminar</button></li>
+    <li>Elemento 2 <button onclick="eliminarElemento(this)">Eliminar</button></li>
+    <li>Elemento 3 <button onclick="eliminarElemento(this)">Eliminar</button></li>
+  </ul>
+
+</body>
+</html>

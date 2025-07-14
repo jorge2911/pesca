@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Eventos con addEventListener</title>
+  <script src="./js/eventos.js" defer></script>
+</head>
+<body>
+  <h1>Ejemplos de eventos</h1>
+
+  <!-- click -->
+  <section>
+    <h2>Evento: click</h2>
+    <button id="btnClick">Haz clic aquí</button>
+    <p id="resultadoClick"></p>
+  </section>
+
+  <!-- keypress -->
+  <section>
+    <h2>Evento: keypress</h2>
+    <input type="text" id="campoTeclado" placeholder="Escribí algo">
+    <p id="resultadoTeclado"></p>
+  </section>
+
+  <!-- submit -->
+  <section>
+    <h2>Evento: submit</h2>
+    <form id="formulario">
+      <input type="text" id="inputNombre" placeholder="Tu nombre">
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensajeFormulario"></p>
+  </section>
+
+  <!-- mouseover -->
+  <section>
+    <h2>Evento: mouseover</h2>
+    <div id="cajaMouse" style="width:200px;height:100px;background-color:lightgray;text-align:center;line-height:100px;">
+      Pasá el mouse por aquí
+    </div>
+  </section>
+</body>
+</html>

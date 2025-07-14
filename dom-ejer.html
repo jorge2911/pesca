@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicios DOM combinados</title>
+  <script src="./js/dom-ejer.js" defer></script>
+</head>
+<body>
+  <h1>Ejercicios de DOM en JavaScript</h1>
+
+  <!-- getElementById -->
+  <section>
+    <h2>getElementById()</h2>
+    <p id="parrafoId">Texto original del párrafo.</p>
+    <button onclick="cambiarConId()">Cambiar texto</button>
+  </section>
+
+  <hr>
+
+  <!-- getElementsByClassName -->
+  <section>
+    <h2>getElementsByClassName()</h2>
+    <p class="grupo">Elemento A</p>
+    <p class="grupo">Elemento B</p>
+    <p class="grupo">Elemento C</p>
+    <button onclick="modificarGrupo()">Modificar grupo</button>
+  </section>
+
+  <hr>
+
+  <!-- querySelector -->
+  <section>
+    <h2>querySelector()</h2>
+    <input type="text" id="nombreUsuario" placeholder="Escribí tu nombre">
+    <button onclick="mostrarSaludo()">Saludar</button>
+    <p id="saludoPersonal"></p>
+  </section>
+
+  <hr>
+
+  <!-- querySelectorAll -->
+  <section>
+    <h2>querySelectorAll()</h2>
+    <ul>
+      <li class="item">Elemento 1</li>
+      <li class="item">Elemento 2</li>
+      <li class="item">Elemento 3</li>
+      <li class="item">Elemento 4</li>
+    </ul>
+    <button onclick="resaltarPares()">Resaltar pares</button>
+  </section>
+
+  <hr>
+
+  <!-- textContent vs innerHTML -->
+  <section>
+    <h2>textContent vs innerHTML</h2>
+    <div id="contenedorHTML">Texto inicial</div>
+    <button onclick="usarTextContent()">Usar textContent</button>
+    <button onclick="usarInnerHTML()">Usar innerHTML</button>
+  </section>
+
+  <hr>
+
+  <!-- createElement, appendChild y remove -->
+  <section>
+    <h2>Agregar y eliminar elementos</h2>
+    <input type="text" id="nuevaTarea" placeholder="Nueva tarea">
+    <button onclick="agregarTarea()">Agregar tarea</button>
+
+    <ul id="listaTareas">
+      <!-- Las tareas se agregan aquí -->
+    </ul>
+  </section>
+</body>
+</html>

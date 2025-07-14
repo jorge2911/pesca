@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Eventos tradicionales, flecha y delegación</title>
+  <script src="./js/eventos-avan.js" defer></script>
+  <style>
+    .tarea { cursor: pointer; padding: 5px; }
+    .tarea:hover { background-color: #e0e0e0; }
+  </style>
+</head>
+<body>
+  <h1>Eventos Avanzados</h1>
+
+  <section>
+    <h2>Eventos tradicionales vs flecha</h2>
+    <button id="btnTradicional">Evento tradicional</button>
+    <button id="btnFlecha">Evento flecha</button>
+    <p id="outputEventos"></p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Delegación de eventos</h2>
+    <input type="text" id="inputTarea" placeholder="Nueva tarea">
+    <button id="agregarTarea">Agregar</button>
+    <ul id="listaDelegada">
+      <!-- Tareas agregadas -->
+    </ul>
+    <small>(Hacé clic en una tarea para eliminarla)</small>
+  </section>
+</body>
+</html>
