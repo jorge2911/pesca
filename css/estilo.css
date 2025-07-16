@@ -98,7 +98,7 @@ nav ul {
 
 .texto-home {
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en móviles */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en celulares móviles */
   justify-content: center;
   gap: 2%;
   padding: 0rem;
@@ -357,7 +357,7 @@ li {
     }
 }
 
-/* Escritorios estándar (1280px a 1599px) */
+/* Pantalla estándar (1280px a 1599px) */
 @media (min-width: 1280px) and (max-width: 1599px) {
  
     body { font-size: 18px;

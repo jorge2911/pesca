@@ -103,7 +103,7 @@ p {
 
 .texto-home {
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en móviles */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en celulares móviles */
   justify-content: center;
   gap: 2%;
   padding: 0rem;
@@ -233,8 +233,8 @@ li {
   border: 1px solid #ccc;
   border-radius: 8px;
   text-align: center;
-  max-width: 300px;     /* <-- controlás el tamaño */
-  margin: auto;         /* <-- centrado en su celda */
+  max-width: 300px;     /* <-- control del tamaño */
+  margin: auto;         /* <-- centrado en la celda */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -242,7 +242,7 @@ li {
   width: 100%;
   height: auto;
   max-height: 200px;     /* <-- opcional para que no se alarguen mucho */
-  object-fit: contain;   /* o 'cover' si querés recorte artístico */
+  object-fit: contain;   /* o 'cover' para recorte artístico */
   margin-bottom: 10px;
 }
 
@@ -375,7 +375,7 @@ li {
     }
 }
 
-/* Escritorios estándar (1280px a 1599px) */
+/* Pantallas estándar (1280px a 1599px) */
 @media (min-width: 1280px) and (max-width: 1599px) {
  
     body { font-size: 18px;
