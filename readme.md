@@ -7,17 +7,20 @@ Página web creada como trabajo de Pre-entrega para el curso de Front-End de Tal
 usando html y css y luego modificada para la entrega del Proyecto Final interactuando con Javascript
 incluyendo carrito de compras y manejo de Dom
 Fecha actualización 15/7/2025.
-
 Proyecto sin fines comerciales, solo educativo
 
 Sitio Web PescAR en línea
 
-Incluye Html con estructuras semanticas bien definidas
-Sitios html que incluye son index, productos, con articulos ubicados en (flexbox, grid y boostrap), club de beneficios, contactos, ubicacion
-El link club de beneficios hace uso de una Api-rest con productos que no tienen que ver "pesca", - son con fines de utilizar una Api en el trabajo final
-Se aplican estilos con diseños responsivos y mediaqueries utilizados en la pre-entrega
-Se enlaza con archivos Js utilizando Dom y fetch para conectar a la api de pruebas haciendo uso de localstorage y sessionstorage
-Se manejan dos carritos por separado. Uno para los articulos de pesca con su correspondiente formulario de compras y un segundo carrito independiente para la gestion de la Api externa con su correspondiente formulario de compras.
+Los archivos Html incluyen estructuras semanticas bien definidas, en el proyecto se utilizan archivos de estilos css y archivos javascript. La estructura del sitio es:
+index.html (pagina principal que incluye fondo, imágenes, video, etc)
+productos.html link a flexbox.html, boostrap.html, grid.hml, y servicios.html (vista api externa )
+servicios.html (club de beneficios, api-rest) 
+contactos.html
+ubicación.html
+La pagina de productos, dispone de los artículos ubicados en (flexbox, grid y bootstrap) con un carrito de compras común a las 3 opciones y el formulario de confirmación de la compra.
+La pagina de club de beneficios (servicios.html), hace uso de la api externa que incorpora los articulos, con su carrito independiente de los articulos de pesca con su formulario de compra.
+Se aplican estilos con diseños responsivos y mediaqueries que han sido utilizados en la pre-entrega, carrito.css compras.css estilos.css y servicios.css 
+Se enlaza con archivos Js utilizando Dom y fetch para conectar a la api de pruebas haciendo uso de localstorage y sessionstorage en los archivos carrito.js compra.js compraPF.js servicios.js
 
 Fecha de ultima revision 16/7/2025.
 
